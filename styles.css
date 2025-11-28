@@ -1,0 +1,702 @@
+
+.result-text b {
+  font-weight: 700;
+  color: #black;
+}
+
+.hero-img {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%; /* чтобы тянулась на всю ширину */
+/*   max-height: 500px; */
+  height: auto;
+  z-index: 9999; /* поверх всех блоков */
+  pointer-events: none; /* чтобы не мешала кликам по сайту */
+   object-fit: cover; 
+}
+
+@media (min-width:1000px) {
+  .hero-img {
+    height: 200px;
+  }
+}
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  
+  min-width: 365px;
+/*   background:#f8eacf; */
+  background-image: url("https://static.tildacdn.com/tild3039-3765-4565-a562-646437626439/IMG_2581.PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-opacity: 0.5;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.page-title,
+.page-subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: #957b65;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+
+.bg {
+/* background:#f8eacf; */
+  background-repeat: repeat-y;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.container {
+  margin: 0 40px;
+  color: #957b65;
+  min-width: 320px;
+}
+
+@media (max-width: 459px) {
+  .container {
+    margin: 0 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .page-title {
+    font-size: 23px;
+  }
+  
+  .page-subtitle {
+    font-size: 16px;
+  }
+  
+  .moon {
+    width: 100%;
+      height: 100%;
+  }
+  
+  .desktop-br {
+    display: none;
+  }
+}
+
+h1 {
+  color: #957b65;
+  text-align: center;
+  font-size: 32px;
+}
+
+.table {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  border-left: 1px solid #ff91be;
+  border-right: 1px solid #ff91be;
+}
+
+.row:nth-child(1) {
+  background: rgba(201, 118, 255, 0.4);
+}
+
+.row:nth-child(2) {
+  background: rgba(95, 102, 237, 0.4);
+}
+
+.row:nth-child(3) {
+  background: rgba(139, 237, 251, 0.4);
+}
+
+.row:nth-child(4) {
+  background: rgba(80, 181, 126, 0.5);
+}
+
+.row:nth-child(5) {
+  background: rgba(255, 198, 105, 0.4);
+}
+
+.row:nth-child(6) {
+  background: rgba(255, 153, 93, 0.4);
+}
+
+.row:nth-child(7) {
+  background: rgba(226, 93, 93, 0.4);
+}
+
+.row:nth-child(8) {
+  background: rgba(223, 223, 223, 0.4);
+}
+
+.row.head {
+  background-color: transparent;
+  border-top: 1px solid #ff91be;
+  border-left: none;
+  border-right: none;
+}
+
+.row .cell {
+  height: 62px;
+  width: 20%;
+  color: #957b65;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .row .cell {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .row .cell {
+    font-size: 15px;
+  }
+}
+
+.row:first-child {
+  border-top: 1px solid #ff91be;
+}
+
+.row:last-child {
+  border-bottom: 1px solid #ff91be;
+}
+
+.row .cell:last-child {
+  max-width: 400px;
+  width: 35%;
+}
+
+.row.head .cell:last-child {
+  border-right: none;
+}
+
+.row.head .cell:first-child {
+  border-left: none;
+}
+
+.text-block {
+  color: white;
+  display: inline-block;
+  max-width: 480px;
+  margin-bottom: 22px;
+}
+
+.text-block h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.text-block p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.text-block.full {
+  display: block;
+  max-width: 100%;
+}
+
+.number {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  font-weight: bold;
+  justify-self: end;
+  margin-left: auto;
+}
+
+.res_head {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.res {
+  display: flex;
+  flex-direction: row;
+}
+
+.res_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.res_colu {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.res_colu:first-child {
+  margin-bottom: 10px;
+}
+
+.res_res {
+  display: flex;
+  align-items: center;
+}
+
+.res_res:before {
+  content: "";
+  display: inline-block;
+  width: 24.4px;
+  height: 106.81px;
+  background-image: url("https://github.com/asktosimon/matrix/blob/master/Vector.png?raw=true");
+  background-repeat: no-repeat;
+  margin: 0 10px;
+}
+
+.button{
+  max-width:308px; width:100%; height:60px;
+  border-radius:0;               /* было 30px */
+  background:#fff583; color:#000;
+  font:700 20px "Montserrat", sans-serif;
+  border:2px solid #fff583;
+  cursor:pointer;
+}
+.button:hover{ filter:brightness(.95); }
+.button:active{ transform:translateY(1px); }
+
+/* временно, если не удаляем из HTML */
+.section-power-code,
+.section-moon-day { display:none !important; }
+
+.input{
+  max-width:310px; height:50px;
+  border-radius:0;               /* было 30px */
+  border:2px solid #957b65;      /* было #fff */
+  background:transparent;
+  font:20px "Montserrat", sans-serif;
+  padding:0 12px;
+  color:#957b65;
+  margin-bottom:20px;
+}
+.input::placeholder{ color:#957b65; opacity:.7; }
+
+
+.form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.right_moon_side,
+.left_moon_side {
+  width: 20%;
+}
+
+.moon {
+  padding: 28px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.96) 3%,
+    rgba(255, 255, 255, 0.67) 24%,
+    rgba(255, 255, 255, 0.43) 44%,
+    rgba(255, 255, 255, 0.25) 62%,
+    rgba(255, 255, 255, 0.11) 78%,
+    rgba(255, 255, 255, 0.03) 91%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.radio_group {
+  color: white;
+  font-size: 20px;
+  margin: 30px auto;
+}
+
+.radio_left {
+  margin-right: 20px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#app {
+  display: flex;
+  margin: 40px auto 0 auto;
+/*   background-image: url("https://github.com/asktosimon/matrix/blob/master/Group 110.png?raw=true"); */
+/*     background:#f8eacf; */
+
+  background-repeat: no-repeat;
+  max-width: 600px;
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: contain;
+}
+
+.svg {
+  margin: 7%;
+}
+
+.section-personal,
+.section-health { display:none !important; }
+
+
+@media (max-width: 500px) {
+  #app {
+    margin: 10px auto 0 auto;
+  }
+}
+
+/* @media (max-width: 1080px) {
+  #app {
+    transform: scale(0.7);
+    transform-origin: 30% 0;
+  }
+}
+
+@media (max-width: 918px) {
+  #app {
+    transform: scale(0.6);
+    transform-origin: 30% 0;
+  }
+}
+
+@media (max-width: 800px) {
+  #app {
+    transform: scale(0.5);
+    transform-origin: 25% 0;
+  }
+}
+
+@media (max-width: 685px) {
+  #app {
+    transform: scale(0.4);
+    transform-origin: 20% 0;
+  }
+}
+
+@media (max-width: 575px) {
+  #app {
+    transform: scale(0.3);
+    transform-origin: 15% 0;
+  }
+}
+
+@media (max-width: 459px) {
+  #app {
+    transform-origin: 5% 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #app {
+    transform: scale(0.2);
+    transform-origin: 0% 0;
+  }
+} */
+
+.hide {
+  display: none;
+}
+
+.field {
+  color: white;
+  margin: 10px 0;
+}
+
+.field_h {
+  font-size: 20px;
+  font-weight: 700;
+  color: #957b65;
+}
+
+.field_v {
+  font-weight: 400;
+  font-size: 20px;
+  color: #957b65;
+}
+
+.moon_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tag {
+  position: absolute;
+  z-index: 1;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.end {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.link_tg:before {
+  content: "";
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  background-image: url("https://github.com/asktosimon/matrix/blob/master/tg.png?raw=true");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.link_insta,
+.link_tg {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.link_tg {
+  margin-right: 20px;
+}
+
+.link_insta:before {
+  content: "";
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  background-image: url("https://github.com/asktosimon/matrix/blob/master/insta.png?raw=true");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.big {
+  font-size: 29px;
+  font-weight: 700;
+}
+
+#app svg {
+  width: 100%;
+  height:100%;
+}
+
+.moon {
+    width: 100px;
+}
+
+@media (max-width: 600px) {
+  .label_r {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 850px) {
+  .moon_block {
+    flex-flow: column;
+  }
+
+  .moon {
+    order: 2;
+  }
+
+  .left_moon_side,
+  .right_moon_side {
+    width: 100%;
+  }
+}
+
+.day-meaning{
+  max-width:800px; margin:30px auto 0;
+  font-family:"Montserrat",sans-serif; color:#957b65;
+}
+.day-meaning__title{ font-weight:700; font-size:24px; margin:0 0 12px; }
+.day-meaning__content{ font-size:18px; line-height:1.6; }
+
+
+/* добавь в <style> внутри SVG (см. пункт 6) */
+.highlight-node { fill:#F2D26C; stroke:#957b65; }
+.highlight-text { fill:#957b65; font-family:"Montserrat",sans-serif; }
+
+.result-block {
+  max-width: 900px;
+  margin: 24px auto 48px;
+  padding: 0 16px;
+}
+
+.result-text {
+  font-family: "Montserrat", sans-serif;
+  color: #957b65;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap; /* сохраняем абзацы и переносы */
+  text-align: left;
+}
+
+.result-media {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* сделать картинку справа у текста результата */
+.result-media { float:right; width:min(38%, 320px); margin:0 0 16px 24px; }
+@media (max-width:768px){ .result-media { float:none; width:100%; margin:16px 0 0; } }
+
+
+.result-media img,
+.result-media video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto 0;
+}
+
+
+
+.result-media figcaption {
+  font-family: "Montserrat", sans-serif;
+  color: #957b65;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* картинка «как на макете»: справа у первого абзаца */
+#result-text #result-media{
+  float: right;
+  width: min(38%, 320px);
+  margin: 0 0 12px 24px;
+  text-align: center;
+}
+
+/* на мобилках картинка уходит под текст */
+@media (max-width: 768px){
+  #result-text #result-media{
+    float: none;
+    width: 100%;
+    margin: 12px 0 0;
+  }
+}
+
+/* на всякий: видео скрыто по умолчанию, показываем его только из JS */
+#result-text #result-media video{ display:none; }
+
+#result-text #result-media {
+  float: right;
+  width: min(38%, 320px);
+  margin: 0 0 12px 24px;
+  text-align: center;
+}
+@media (max-width: 768px){
+  #result-text #result-media {
+    float: none;
+    width: 100%;
+    margin: 12px 0 0;
+  }
+}
+/* плотная связка изображения и подписи */
+#result-media {
+  display: inline-block;      /* чтобы высота блока подстраивалась */
+  line-height: 0;             /* убираем лишний зазор от текста */
+  vertical-align: top;
+}
+
+#result-media img {
+  display: block;
+  margin: 0;
+  width: 190px
+}
+
+#result-media figcaption {
+  margin: 0;
+  padding-top: 2px;           /* минимальный просвет */
+  line-height: 1.1;
+  font-size: 14px;
+}
+/* плотная связка фото+подписи везде */
+#result-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#result-media img{
+  display:block;
+  margin-bottom: 10px;
+}
+#result-media figcaption{
+  margin:0;
+  padding-top:2px;        /* минимальный просвет */
+  line-height:1.1;
+  font-size:14px;
+}
+
+/* мобильная раскладка: фигура под текстом, центр, узкий зазор */
+@media (max-width:768px){
+  #result-text #result-media{
+    float:right;           /* уходим из обтекания */
+    width:100%;
+    max-width:320px;      /* чтобы не расползалась */
+    margin:12px auto 10px;   /* центрируем блок */
+    text-align:center;
+  }
+}
+
+@media (max-width:500px){
+  #result-text #result-media{
+    float: left;
+  }
+}
