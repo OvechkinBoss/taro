@@ -580,6 +580,7 @@ h4 {
   color: #957b65;
   font-size: 16px;
   line-height: 1.6;
+  font-weight: 500;
   white-space: pre-wrap; /* сохраняем абзацы и переносы */
   text-align: left;
 }
@@ -609,6 +610,7 @@ h4 {
   color: #957b65;
   font-size: 14px;
   opacity: 0.8;
+  font-weight: 500;
   margin-top: 4px;
 }
 
